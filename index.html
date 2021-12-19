@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Timerr</title>
+    <style>
+        button {
+    background: black;
+    line-height: 54px;
+    border-radius: 8px;
+    padding: 0 22px;
+    font-size: 2em;
+    color: #c91936;
+    outline: none;
+    border: none;
+    box-shadow: 10px solid black;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+}
+body {display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1987cf;
+    margin-top: 40px;
+    background: linear-gradient(to top right, #e1e4e6 0%, #160244 100%);
+    min-height: calc(100vh - 48px);
+}
+p{
+    font-size: larger;
+    text-size-adjust: auto;
+}
+div {
+    box-shadow: 0px 8px 100px 0px rgb(10, 10, 10);
+    background-color: palevioletred;
+} 
+</style>
+</head>
+<body><div>
+    <p>Timer(Tick Tock)</p>
+    <p id="timer_op">1</p>
+    <button id="resume_timer" class="inline">Start</button>
+    <button id="pause_timer" class="inline">Stop</button>
+    
+    <button id="restart_timer" class="inline">Restart</button>
+    <button id="reset_timer" class="inline">Reset</button> 
+    <script src="set_intervals.js"></script>
+</div>
+</body>
+</html>
